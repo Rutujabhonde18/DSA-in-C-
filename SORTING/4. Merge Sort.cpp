@@ -1,7 +1,3 @@
---------------------------------------------------
-            APPROACH 1
---------------------------------------------------
-  
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -47,6 +43,9 @@ void merge(int *arr, int s, int e)
 	while(index2 < len2){
 		arr[mainArrayIndex++] = second[index2++];
 	}
+	
+	delete []first;
+	delete []second;
 }
 
 void mergeSort(int *arr, int s, int e)
